@@ -1,4 +1,4 @@
 # ImersaoReactAlura
 Projeto criado durante a imersão do alura
 
-![image](https://user-images.githubusercontent.com/31359644/151846630-31f87bd3-cb63-4c1d-9321-c27524725abe.png)
+![image](https://user-images.githubusercontent.com/31359644/151846779-e8918a69-06a7-4c0d-889b-ca252429bc22.png)
