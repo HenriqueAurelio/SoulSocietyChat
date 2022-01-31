@@ -75,7 +75,7 @@ export default function initialPage() {
             as="form"
             onSubmit={(event) => {
               event.preventDefault()
-              routes.push('/chat')
+              routes.push(`/chat?username=${username}`)
             }}
             styleSheet={{
               display: 'flex',
