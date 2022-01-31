@@ -135,10 +135,11 @@ export default function initialPage() {
                 borderRadius: '50%',
                 marginBottom: '16px',
                 color: 'white',
+                backgroundColor: 'transparent',
               }}
               src={
                 username == '' || username.length < 3
-                  ? 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Breezeicons-actions-22-im-user.svg/1200px-Breezeicons-actions-22-im-user.svg.png'
+                  ? 'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/77b4c58c-8292-43f9-bac3-9e16943becf0/de8hilf-4bc455ef-3665-4457-ad01-ef8d734732ad.png'
                   : `https://github.com/${username}.png`
               }
             />
