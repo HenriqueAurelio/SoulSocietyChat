@@ -3,7 +3,7 @@ import appConfig from '../config.json'
 import { useState } from 'react'
 import { useRouter } from 'next/router'
 
-function Titulo(props) {
+function Title(props) {
   const Tag = props.tag || 'h1'
   return (
     <>
@@ -20,19 +20,6 @@ function Titulo(props) {
     </>
   )
 }
-
-// function HomePage() {
-//   return (
-//     <>
-//       <div>
-//         <Titulo tag="h2">Boas vindas de Voltas</Titulo>
-//         <h2>Discord - Alura Matrix</h2>
-//       </div>
-//     </>
-//   )
-// }
-
-// export default HomePage
 
 export default function initialPage() {
   const [username, setUsername] = useState('HenriqueAurelio')
@@ -87,7 +74,7 @@ export default function initialPage() {
               marginBottom: '32px',
             }}
           >
-            <Titulo tag="h2">Boas vindas de volta!</Titulo>
+            <Title tag="h2">Welcome to Soul Society</Title>
             <Text
               variant="body3"
               styleSheet={{
