@@ -22,7 +22,7 @@ function Title(props) {
 }
 
 export default function initialPage() {
-  const [username, setUsername] = useState('HenriqueAurelio')
+  const [username, setUsername] = useState('')
   const routes = useRouter()
 
   return (
