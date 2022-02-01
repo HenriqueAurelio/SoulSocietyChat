@@ -203,7 +203,7 @@ function MessageList(props) {
         flex: 1,
         color: appConfig.theme.colors.neutrals['000'],
         marginBottom: '16px',
-        maxWidth: '1600px',
+        maxWidth: '1720px',
       }}
     >
       {props.messages.map((message) => {

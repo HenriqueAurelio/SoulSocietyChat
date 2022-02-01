@@ -1,9 +1,9 @@
-import React from 'react'
+import { useState } from 'react'
 import { Box, Button, Text, Image } from '@skynexui/components'
 import appConfig from '../../config.json'
 
 export function ButtonSendSticker(props) {
-  const [isOpen, setOpenState] = React.useState('')
+  const [isOpen, setOpenState] = useState('')
 
   return (
     <Box
@@ -14,7 +14,7 @@ export function ButtonSendSticker(props) {
       <Button
         styleSheet={{
           borderRadius: '50%',
-          padding: '0 3px 0 0',
+          padding: '0 0 0 0',
           marginRight: '10px',
           minWidth: '50px',
           minHeight: '50px',
@@ -78,10 +78,11 @@ export function ButtonSendSticker(props) {
                 onClick={() => {
                   if (Boolean(props.onStickerClick)) {
                     props.onStickerClick(sticker)
+                    console.log(sticker)
                   }
                 }}
                 tag="li"
-                key={sticker}
+                key={sticker.id}
                 styleSheet={{
                   width: '50%',
                   borderRadius: '5px',
