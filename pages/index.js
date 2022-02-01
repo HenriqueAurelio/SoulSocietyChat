@@ -143,17 +143,19 @@ export default function initialPage() {
                   : `https://github.com/${username}.png`
               }
             />
-            <Text
-              variant="body4"
-              styleSheet={{
-                color: appConfig.theme.colors.neutrals[200],
-                backgroundColor: appConfig.theme.colors.neutrals[900],
-                padding: '3px 10px',
-                borderRadius: '1000px',
-              }}
-            >
-              {username}
-            </Text>
+            {username != '' && (
+              <Text
+                variant="body4"
+                styleSheet={{
+                  color: appConfig.theme.colors.neutrals[200],
+                  backgroundColor: appConfig.theme.colors.neutrals[900],
+                  padding: '3px 10px',
+                  borderRadius: '1000px',
+                }}
+              >
+                {username}
+              </Text>
+            )}
           </Box>
           {/* Photo Area */}
         </Box>
