@@ -2,10 +2,6 @@
 Projeto criado durante a imersão do alura
 
 
-### Tecnologias usadas
-1. Supabase
-2. nextJs
-3. Skynet
 
 
 ### Instruções para execução
