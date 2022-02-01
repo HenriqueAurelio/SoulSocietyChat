@@ -202,8 +202,8 @@ function MessageList(props) {
         flexDirection: 'column-reverse',
         flex: 1,
         color: appConfig.theme.colors.neutrals['000'],
-        marginBottom: '16px',
         maxWidth: '1720px',
+        marginBottom: '16px',
       }}
     >
       {props.messages.map((message) => {

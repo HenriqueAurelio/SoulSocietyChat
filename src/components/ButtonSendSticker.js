@@ -1,9 +1,9 @@
-import { useState } from 'react'
+import React from 'react'
 import { Box, Button, Text, Image } from '@skynexui/components'
 import appConfig from '../../config.json'
 
 export function ButtonSendSticker(props) {
-  const [isOpen, setOpenState] = useState('')
+  const [isOpen, setOpenState] = React.useState('')
 
   return (
     <Box
@@ -78,11 +78,10 @@ export function ButtonSendSticker(props) {
                 onClick={() => {
                   if (Boolean(props.onStickerClick)) {
                     props.onStickerClick(sticker)
-                    console.log(sticker)
                   }
                 }}
                 tag="li"
-                key={sticker.id}
+                key={sticker}
                 styleSheet={{
                   width: '50%',
                   borderRadius: '5px',
