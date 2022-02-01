@@ -179,10 +179,13 @@ function Header() {
       >
         <Text variant="heading5">Chat</Text>
         <Button
-          variant="tertiary"
-          colorVariant="neutral"
           label="Logout"
           href="/"
+          buttonColors={{
+            contrastColor: appConfig.theme.colors.neutrals['000'],
+            mainColor: appConfig.theme.colors.primary[500],
+            mainColorStrong: appConfig.theme.colors.primary[600],
+          }}
         />
       </Box>
     </>
